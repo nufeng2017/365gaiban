@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../src/layui/css/layui.css" />
+		<link rel="stylesheet" href="../public/css/public.css" />
+		<link rel="stylesheet" href="../css/list.css" />
+		<title></title>
+	</head>
+
+	<body>
+		<!--头部导航-->
+		<div class="z-head-nav z-wrap z-nav-fixed">
+			<div class="z-container z-cl">
+				<div class="z-index-logo z-fl">
+					<a href=""></a>
+				</div>
+				<div class="z-fl z-address z-nav-hover">
+					南京
+					<ul class="z-nav-hover-box">
+						<li class="z-hot-city"><span>热门城市:</span>
+							<a href="">南京</a>
+							<a href="">合肥</a>
+							<a href="">芜湖</a>
+						</li>
+						<li><span>A-F:</span>
+							<a href="">南京</a>
+							<a href="">合肥</a>
+							<a href="">芜湖</a>
+							<a href="">南京</a>
+							<a href="">合肥</a>
+							<a href="">芜湖</a>
+							<a href="">南京</a>
+							<a href="">合肥</a>
+							<a href="">芜湖</a>
+							<a href="">南京</a>
+							<a href="">合肥</a>
+							<a href="">芜湖</a>
+							<a href="">南京</a>
+							<a href="">合肥</a>
+							<a href="">芜湖</a>
+						</li>
+						<li><span>A-F:</span>
+							<a href="">南京</a>
+							<a href="">合肥</a>
+							<a href="">芜湖</a>
+							<a href="">南京</a>
+							<a href="">合肥</a>
+							<a href="">芜湖</a>
+							<a href="">南京</a>
+							<a href="">合肥</a>
+							<a href="">芜湖</a>
+							<a href="">南京</a>
+							<a href="">合肥</a>
+							<a href="">芜湖</a>
+							<a href="">南京</a>
+							<a href="">合肥</a>
+							<a href="">芜湖</a>
+						</li>
+					</ul>
+				</div>
+				<div class="z-head-nav-box z-fl z-cl">
+					<div class="z-fl">
+						<a href="">首页</a>
+					</div>
+					<div class="z-fl">
+						<a href="">新房</a>
+					</div>
+					<div class="z-fl">
+						<a href="">二手房</a>
+					</div>
+					<div class="z-fl z-nav-this">
+						<a href="">租房</a>
+					</div>
+					<div class="z-fl">
+						<a href="">小区</a>
+					</div>
+					<div class="z-fl">
+						<a href="">公寓</a>
+					</div>
+					<div class="z-fl">
+						<a href="">写字楼</a>
+					</div>
+					<div class="z-fl">
+						<a href="">商铺</a>
+					</div>
+				</div>
+				<div class="z-fl z-cl z-head-info-box">
+					<div class="z-fl z-contact z-nav-hover">
+						联系客服
+						<ul class="z-nav-hover-box">
+							<li>
+								<div>个人用户热线：</div>
+								<p>025-84645315/83247162转2 </p>
+							</li>
+							<li>
+								<div>平台合作热线：</div>
+								<p>150-9431-5024</p>
+							</li>
+						</ul>
+					</div>
+					<div class="z-fl z-app z-nav-hover">
+						手机淘房
+						<div class="z-nav-hover-box">
+							<p>微信扫一扫二维码下载365淘房客户端</p>
+							<div class="z-download">
+								<div class="z-download-btn">
+									<div class="z-download-ios">iPhone下载</div>
+									<div class="z-download-android">Android下载</div>
+								</div>
+								<div class="z-download-qrcode">
+									<img src="../public/img/qrcode-365.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="z-fl z-platform z-nav-hover">
+						经纪人平台
+						<ul class="z-nav-hover-box">
+							<li>经纪人登录</li>
+							<li>门店版登录</li>
+							<li>经纪人注册</li>
+						</ul>
+					</div>
+					<div class="z-fl z-login z-nav-hover">
+						<a href="">登录</a>
+						<span></span>
+						<a href="">注册</a>
+						<ul class="z-nav-hover-box">
+							<li>我的关注</li>
+							<li>房源管理</li>
+							<li>求购求租</li>
+							<li>我的消息</li>
+							<li>退出</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--搜索框-->
+		<div class="z-list-search z-wrap z-list-search-scroll">
+			<div class="z-container z-cl">
+				<div class="z-fl z-search-input-block">
+					<input type="text" placeholder="输入区域、地铁、小区名" />
+					<div class="z-list-search-btn"></div>
+					<ul class="z-search-list-box" style="display: none;">
+						<li>
+							<span>安德门小区</span><b> 安德门小区      雨花台区   安德门</b>
+							<div class="z-fr">约<i>6</i>套</div>
+						</li>
+						<li>
+							<span>安德门小区</span><b> 安德门小区      雨花台区   安德门</b>
+							<div class="z-fr">约<i>6</i>套</div>
+						</li>
+						<li>
+							<span>安德门小区</span><b> 安德门小区      雨花台区   安德门</b>
+							<div class="z-fr">约<i>6</i>套</div>
+						</li>
+					</ul>
+				</div>
+				<div class="z-fr z-cl">
+					<div class="z-fl">发布房源</div>
+					<div class="z-fl">帮你找房</div>
+				</div>
+			</div>
+		</div>
+
+		<!--面包屑导航-->
+		<div class="z-crumbs-nav z-container">
+			<span>当前位置：</span>
+			<a href="">南京租房</a>
+			<span> &gt; </span>
+			<a href="">南京房屋出租</a>
+		</div>
+
+		<!--筛选-->
+		<div class="z-filter-box z-container layui-form">
+			<div class="z-filter-item z-filter-position">
+				<span>位置：</span>
+				<a href="" class="z-filter-this z-find-area">区域找房</a>
+				<a href="" class="z-find-subway">地铁找房</a>
+				<a href="" class="z-find-map">地图找房</a>
+			</div>
+			<div class="z-filter-item">
+				<span>区域：</span>
+				<a href="" class="z-filter-this">全部</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+				<a href="">鼓楼区</a>
+			</div>
+			<div class="z-filter-area">
+				<span><b>D</b><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a></span><span><b>D</b><a href="">大桥南路</a><a href="">大桥南路</a></span>
+				<span><b>D</b><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a></span>
+				<span><b>D</b><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a></span>
+				<span><b>D</b><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a><a href="">大桥南路</a></span>
+
+			</div>
+			<div class="z-filter-item">
+				<span>来源：</span>
+				<a href="" class="z-filter-this">全部</a>
+				<a href="">个人</a>
+				<a href="">中介</a>
+				<a href="">品牌公寓</a>
+			</div>
+			<div class="z-filter-item">
+				<span>方式：</span>
+				<a href="" class="z-filter-this">全部</a>
+				<a href="">整租</a>
+				<a href="">合租</a>
+			</div>
+			<div class="z-filter-item">
+				<span>类型：</span>
+				<a href="" class="z-filter-this">全部</a>
+				<a href="">住宅</a>
+				<a href="">别墅</a>
+				<a href="">写字楼</a>
+				<a href="">商铺</a>
+				<a href="">车库车位</a>
+				<a href="">厂房仓库</a>
+			</div>
+			<div class="z-filter-item">
+				<span>租金：</span>
+				<a href="" class="z-filter-this">全部</a>
+				<a href="">&le;500元</a>
+				<a href="">500-1000元</a>
+				<a href="">1000-1500元</a>
+				<a href="">1500-2000元</a>
+				<a href="">3000-4500元</a>
+				<a href="">&ge;4500元</a>
+				<div class="z-input-price z-cl">
+					<div class="z-fl">
+						<input type="text" /> - <input type="text" />万
+					</div>
+					<div class="z-input-ready z-fl">确定</div>
+				</div>
+				<div class="z-rental-date z-cl">
+					<div class="z-fl z-select-this">日租金</div>
+					<div class="z-fl">月租金</div>
+				</div>
+			</div>
+			<div class="z-filter-item">
+				<span>其它：</span>
+				<a href="" class="z-filter-this">全部</a>
+				<div class="z-select ">
+					<span class="z-select-val">房型不限</span>
+					<ul>
+						<li>房型不限</li>
+						<li>一室两厅</li>
+					</ul>
+				</div>
+				<div class="z-select">
+					<span class="z-select-val">楼层不限</span>
+					<ul>
+						<li>楼层不限</li>
+						<li>一室两厅</li>
+					</ul>
+				</div>
+				<div class="z-select">
+					<span class="z-select-val">装修不限</span>
+					<ul>
+						<li>装修不限</li>
+						<li>一室两厅</li>
+					</ul>
+				</div>
+				<div class="z-filter-checkbox">
+					<input type="checkbox" name="like1[write]" lay-skin="primary" title="写作" checked="">
+					<input type="checkbox" name="like1[write]" lay-skin="primary" title="写作" checked="">
+					<input type="checkbox" name="yanxuan" lay-skin="primary" title="严选" checked="" class="z-yanxuan-checkbox">
+				</div>
+			</div>
+		</div>
+
+		<!--当前找房条件-->
+		<div class="z-container z-now-filter-box">
+			<div class="z-now-filter">
+				<span>当前找房条件：</span>
+				<ul class="z-cl">
+					<li class="z-fl"><span>鼓楼</span><i></i></li>
+					<li class="z-fl"><span>鼓楼</span><i></i></li>
+				</ul>
+				<div class="z-cl z-filter-btn">
+					<div class="z-fl z-save-filter">保存该找房条件</div>
+					<div class="z-fl z-clear-filter">清空条件</div>
+				</div>
+			</div>
+		</div>
+
+		<!--房源列表-->
+		<div class="z-list-box z-container z-cl">
+			<div class="z-list-head z-cl">
+				<ul class="z-fl z-list-nav-box z-cl">
+					<li class="z-fl z-list-nav-this">南京租房</li>
+					<li class="z-fl">品牌公寓</li>
+					<li class="z-fl">写字楼</li>
+					<li class="z-fl">商铺</li>
+				</ul>
+				<ul class="z-fr z-cl z-list-sort-box">
+					<li class="z-fl">默认排序</li>
+					<li class="z-select-sort z-sort-1 z-fl">租金</li>
+					<li class="z-select-sort z-sortr-2 z-fl">面积</li>
+					<li class="z-fl">发布时间</li>
+				</ul>
+			</div>
+
+			<!--列表-->
+			<div class="z-list-container z-fl">
+				<div class="z-list-item-box">
+					<div class="z-list-item">
+						<div class="z-list-item-img">
+							<img src="../public/img/test.png" alt="" />
+							<div class="z-img-num">5图</div>
+						</div>
+						<div class="z-list-item-title z-cl">
+							<div class="z-fl z-text-overflow">1栋楼下 地下车位出租 随时看房1栋楼下 地下车位出租 随时看房1栋楼下 地下车位出租 随时看房1栋楼下 地下车位出租 随时看房</div>
+							<div class="z--list-item-icons z-fl">
+								<div class="z-icon-1">多图</div>
+								<div class="z-icon-2">急租</div>
+								<div class="z-icon-3">验真</div>
+							</div>
+						</div>
+						<div class="z-list-address">
+							<span>马府新村 长白街221号</span>
+							<span>距离3号线天润城站626米</span>
+						</div>
+						<div class="z-list-name">周先生（个人）<span></span></div>
+						<div class="z-advertisement-icon">广告</div>
+						<div class="z-list-area">
+							<div><span>24</span>㎡ </div>
+							<p>建筑面积</p>
+						</div>
+						<div class="z-list-price">
+							<div><span>2000</span>元/月</div>
+							<p>月租金</p>
+						</div>
+					</div>
+					<div class="z-list-item">
+						<div class="z-list-item-img z-yanxuan">
+							<img src="../public/img/test.png" alt="" />
+							<div class="z-img-num">5图</div>
+						</div>
+						<div class="z-list-item-title z-cl">
+							<div class="z-fl z-text-overflow">1栋楼下 地下车位出租 随时看房1栋楼下 地下车位出租 随时看房1栋楼下 地下车位出租 随时看房1栋楼下 地下车位出租 随时看房</div>
+							<div class="z--list-item-icons z-fl">
+								<div class="z-icon-1">多图</div>
+								<div class="z-icon-2">急租</div>
+								<div class="z-icon-3">验真</div>
+							</div>
+						</div>
+						<div class="z-list-type-box">3室1厅1卫 | 88㎡ | 南 | 精装修 | 2/5层</div>
+						<div class="z-list-address">
+							<span>马府新村 长白街221号</span>
+							<span>距离3号线天润城站626米</span>
+						</div>
+						<div class="z-list-name">周先生（个人）<span></span></div>
+						<div class="z-advertisement-icon">广告</div>
+						<div class="z-list-price">
+							<div><span>2000</span>元/月</div>
+						</div>
+					</div>
+					<div class="z-list-item">
+						<div class="z-list-item-img z-yanxuan">
+							<img src="../public/img/test.png" alt="" />
+							<div class="z-img-num">5图</div>
+						</div>
+						<div class="z-list-item-title z-cl">
+							<div class="z-fl z-text-overflow">1栋楼下 地下车位出租 随时看房1栋楼下 地下车位出租 随时看房1栋楼下 地下车位出租 随时看房1栋楼下 地下车位出租 随时看房</div>
+							<div class="z--list-item-icons z-fl">
+								<div class="z-icon-1">多图</div>
+								<div class="z-icon-2">急租</div>
+								<div class="z-icon-3">验真</div>
+							</div>
+						</div>
+						<div class="z-list-type-box">3室1厅1卫 | 88㎡ | 南 | 精装修 | 2/5层</div>
+						<div class="z-list-address">
+							<span>马府新村 长白街221号</span>
+							<span>距离3号线天润城站626米</span>
+						</div>
+						<div class="z-list-name">周先生（个人）<span></span></div>
+						<div class="z-list-characteristic-box">
+							<div>办公家具</div>
+							<div>办公家具</div>
+							<div>办公家具</div>
+						</div>
+						<div class="z-advertisement-icon">广告</div>
+						<div class="z-list-price z-big-area">
+							<div><span>2000</span>元/天*平米 </div>
+							<p><span>3500</span>元/月</p>
+						</div>
+					</div>
+				</div>
+				
+				<!--分页器-->
+				<div id="z-laypage"></div>
+			</div>
+
+			<!--广告-->
+			<div class="z-list-advertisement z-fl">
+				<div class="z-p-wrap">
+					<img src="../public/img/test-1.png" alt="" />
+				</div>
+				<div class="z-p-wrap">
+					<p>精选好房</p>
+					<ul class="z-p-list">
+						<li class="z-a-type-1">
+							<div class="z-p-list-img">
+								<img src="../public/img/test.png" alt="" />
+								<div class="z-p-list-img-info">周先生 13698548745</div>
+								<div class="z-p-list-img-icon">写字楼</div>
+							</div>
+							<div class="z-p-list-title z-text-overflow">建邺区 北纬国际中心</div>
+							<div class="z-cl z-p-list-price">
+								<span class="z-fl">120㎡-精装修</span>
+								<span class="z-fr">350000元/月</span>
+							</div>
+						</li>
+						<li class="z-a-type-1">
+							<div class="z-p-list-img">
+								<img src="../public/img/test.png" alt="" />
+								<div class="z-p-list-img-info">周先生 13698548745</div>
+								<div class="z-p-list-img-icon">写字楼</div>
+							</div>
+							<div class="z-p-list-title z-text-overflow">建邺区 北纬国际中心</div>
+							<div class="z-cl z-p-list-price">
+								<span class="z-fl">120㎡-精装修</span>
+								<span class="z-fr">350000元/月</span>
+							</div>
+						</li>
+						<li class="z-a-type-1">
+							<div class="z-p-list-img">
+								<img src="../public/img/test.png" alt="" />
+								<div class="z-p-list-img-info">周先生 13698548745</div>
+								<div class="z-p-list-img-icon">写字楼</div>
+							</div>
+							<div class="z-p-list-title z-text-overflow">建邺区 北纬国际中心</div>
+							<div class="z-cl z-p-list-price">
+								<span class="z-fl">120㎡-精装修</span>
+								<span class="z-fr">350000元/月</span>
+							</div>
+						</li>
+						<li class="z-a-type-1">
+							<div class="z-p-list-img">
+								<img src="../public/img/test.png" alt="" />
+								<div class="z-p-list-img-info">周先生 13698548745</div>
+								<div class="z-p-list-img-icon">写字楼</div>
+							</div>
+							<div class="z-p-list-title z-text-overflow">建邺区 北纬国际中心</div>
+							<div class="z-cl z-p-list-price">
+								<span class="z-fl">120㎡-精装修</span>
+								<span class="z-fr">350000元/月</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="z-p-wrap">
+					<p>精选好房<a href="" class="z-fr">更多</a></p>
+					<ul class="z-p-list">
+						<li class="z-a-type-2">
+							<div class="z-p-list-img">
+								<img src="../public/img/test.png" alt="" />
+								<div class="z-p-list-img-icon-1">品质精选</div>
+							</div>
+							<div class="z-p-list-title z-text-overflow">建邺区 北纬国际中心</div>
+							<div class="z-cl z-p-list-price">
+								<span class="z-fl">120㎡-精装修</span>
+								<span class="z-fr">350000元/月</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		
+		<!--品牌推荐-->
+		<div class="z-container">
+			<div class="z-best-box-title">品牌公寓推荐<a href="">查看更多</a></div>
+			<div class="z-list-advertisement z-best-house">
+				<div class="z-p-wrap">
+					<ul class="z-p-list z-cl">
+						<li class="z-a-type-2">
+							<div class="z-p-list-img">
+								<img src="../public/img/test.png" alt="" />
+								<div class="z-p-list-img-icon-1">品质精选</div>
+							</div>
+							<div class="z-p-list-title z-text-overflow">建邺区 北纬国际中心</div>
+							<div class="z-cl z-p-list-price">
+								<span class="z-fl">120㎡-精装修</span>
+								<span class="z-fr">350000元/月</span>
+							</div>
+						</li>
+						<li class="z-a-type-2">
+							<div class="z-p-list-img">
+								<img src="../public/img/test.png" alt="" />
+								<div class="z-p-list-img-icon-1">品质精选</div>
+							</div>
+							<div class="z-p-list-title z-text-overflow">建邺区 北纬国际中心</div>
+							<div class="z-cl z-p-list-price">
+								<span class="z-fl">120㎡-精装修</span>
+								<span class="z-fr">350000元/月</span>
+							</div>
+						</li>
+						<li class="z-a-type-2">
+							<div class="z-p-list-img">
+								<img src="../public/img/test.png" alt="" />
+								<div class="z-p-list-img-icon-1">品质精选</div>
+							</div>
+							<div class="z-p-list-title z-text-overflow">建邺区 北纬国际中心</div>
+							<div class="z-cl z-p-list-price">
+								<span class="z-fl">120㎡-精装修</span>
+								<span class="z-fr">350000元/月</span>
+							</div>
+						</li>
+						<li class="z-a-type-2">
+							<div class="z-p-list-img">
+								<img src="../public/img/test.png" alt="" />
+								<div class="z-p-list-img-icon-1">品质精选</div>
+							</div>
+							<div class="z-p-list-title z-text-overflow">建邺区 北纬国际中心</div>
+							<div class="z-cl z-p-list-price">
+								<span class="z-fl">120㎡-精装修</span>
+								<span class="z-fr">350000元/月</span>
+							</div>
+						</li>
+						<li class="z-a-type-2">
+							<div class="z-p-list-img">
+								<img src="../public/img/test.png" alt="" />
+								<div class="z-p-list-img-icon-1">品质精选</div>
+							</div>
+							<div class="z-p-list-title z-text-overflow">建邺区 北纬国际中心</div>
+							<div class="z-cl z-p-list-price">
+								<span class="z-fl">120㎡-精装修</span>
+								<span class="z-fr">350000元/月</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--footer-->
+		<div class="z-footer z-wrap">
+			<div class="z-container">
+				<div class="z-footer-block-title">友情链接</div>
+				<div class="z-footer-content-box z-cl">
+					<a href="">佳木斯租房网</a>
+					<a href="">南京租房</a>
+					<a href="">宁波二手房</a>
+					<a href="">佳木斯租房网</a>
+					<a href="">南京租房</a>
+					<a href="">宁波二手房</a>
+					<a href="">佳木斯租房网</a>
+					<a href="">南京租房</a>
+					<a href="">宁波二手房</a>
+					<a href="">佳木斯租房网</a>
+					<a href="">南京租房</a>
+					<a href="">宁波二手房</a>
+					<a href="">佳木斯租房网</a>
+					<a href="">南京租房</a>
+					<a href="">宁波二手房</a>
+					<a href="">佳木斯租房网</a>
+					<a href="">南京租房</a>
+					<a href="">宁波二手房</a>
+					<a href="">佳木斯租房网</a>
+					<a href="">南京租房</a>
+					<a href="">宁波二手房</a>
+					<a href="">佳木斯租房网</a>
+					<a href="">南京租房</a>
+					<a href="">宁波二手房</a>
+				</div>
+				<div class="z-footer-block-title">免责声明</div>
+				<div class="z-footer-content-box">本网站所展示的出售、出租房源信息是为网友找房提供便利服务，信息内容由房源发布者负责，具体请与发布者核实或以政府部门登记备案为准，请谨慎查证。其学区介绍来源于历史资料且不断更新中，具体以教育局下发的最新文件为准。如遇信息有误，您可以在房源页面点击“举报”或拨打投诉电话：025-57791365。</div>
+				<div class="z-footer-otherlink-box">
+					<a href="">关于我们</a>
+					<span></span>
+					<a href="">联系我们</a>
+					<span></span>
+					<a href="">招聘信息</a>
+					<span></span>
+					<a href="">各地二手房</a>
+					<span></span>
+					<a href="">各地租房</a>
+					<span></span>
+					<a href="">友情链接</a>
+					<span></span>
+					<a href="">合作伙伴</a>
+					<span></span>
+					<a href="">法律声明</a>
+					<span></span>
+					<a href="">网站地图</a>
+				</div>
+				<div class="z-abc">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div>
+				<div class="z-footer-web-info">365淘房 -南京租房 rent.house365.com ©2006-2019　 苏 B2-20110162</div>
+			</div>
+		</div>
+
+		<!--侧边栏-->
+		<div class="z-side-nav-box">
+			<div class="z-side-nav">
+				<div class="z-cl z-side-nav-btn">
+					<div class="z-fl"></div>
+					<div class="z-fl">下载APP</div>
+				</div>
+				<div class="z-side-nav-content">
+					<img src="../public/img/qrcod.jpg" alt="" />
+					<div>下载365淘房APP</div>
+				</div>
+			</div>
+			<div class="z-side-nav">
+				<div class="z-cl z-side-nav-btn">
+					<div class="z-fl"></div>
+					<div class="z-fl">小程序</div>
+				</div>
+				<div class="z-side-nav-content">
+					<img src="../public/img/qrcode.jpg" alt="" />
+					<div>扫一扫微信小程序</div>
+				</div>
+			</div>
+			<div class="z-side-nav">
+				<div class="z-cl z-side-nav-btn">
+					<div class="z-fl"></div>
+					<div class="z-fl">意见反馈</div>
+				</div>
+			</div>
+			<div class="z-side-nav">
+				<div class="z-cl z-side-nav-btn">
+					<div class="z-fl"></div>
+					<div class="z-fl">QQ</div>
+				</div>
+				<div class="z-side-nav-content">
+					<div>QQ群：54874587</div>
+				</div>
+			</div>
+			<div class="z-side-nav z-hover-this" id="z-zixun">
+				<div class="z-cl z-side-nav-btn">
+					<div class="z-fl"></div>
+					<div class="z-fl">咨询</div>
+				</div>
+				<div class="z-side-nav-content">
+					<div class="z-zixun-btn">
+						<span class="z-close-icon"></span>
+						<img src="../public/img/avatar.png" alt="" />
+						<div>365租博士</div>
+						<p>在线咨询</p>
+						<h5>[服务时间8:40-17:40]</h5>
+					</div>
+					<div class="z-zixun-phone">
+						求租热线: 400-8988-365转8888
+					</div>
+				</div>
+			</div>
+			<div class="z-side-nav" id="z-back-top">
+				<div class="z-side-nav-btn z-gobacktop">
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src='../src/layui/layui.js'></script>
+	<script type="text/javascript" src='../public/js/public.js'></script>
+	<script type="text/javascript" src='../js/list.js'></script>
+
+</html>

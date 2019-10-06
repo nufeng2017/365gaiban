@@ -1,0 +1,204 @@
+body{
+	padding-top: 61px;
+}
+.z-head-nav{
+	position: absolute !important;
+}
+
+/*搜索*/
+.z-list-search {
+	height: 104px;
+	background: #fafafa;
+	box-sizing: border-box;
+	padding-top: 28px;
+}
+.z-list-search .z-container>div{
+	box-sizing: border-box;
+	height: 48px;
+}
+.z-list-search .z-container>div:first-child{
+	border:1px solid #d9dcde;
+	border-radius: 3px;
+	background: #fff;
+	width:680px;
+	padding: 0 50px 0 20px;
+	position: relative;
+}
+.z-list-search .z-container>div:first-child input{
+	outline: none;
+	border:none;
+	width:100%;
+	height: 100%;
+}
+.z-list-search .z-container>div:first-child .z-list-search-btn{
+	position: absolute;
+	height: 100%;
+	width:50px;
+	top:0;
+	right: 0;
+	cursor: pointer;
+	background: url(../public/img/icons/icon-5.png) no-repeat center;
+	background-color: #ff7401;
+}
+.z-list-search .z-container>div:last-child>div{
+	height: 100%;
+	width:150px;
+	text-align: center;
+	line-height: 48px;
+	color:#fff;
+	font-size:16px;
+	cursor: pointer;
+	border-radius: 3px;
+	background: #ff981e;
+	margin-left: 18px;
+}
+.z-list-search .z-container>div:last-child>div:hover{
+	background: #f2921d;
+}
+.z-list-search .z-container>div:last-child>div:last-child{
+	background: #404040;
+}
+.z-list-search .z-container>div:last-child>div:last-child:hover{
+	background: #333;
+}
+.z-list-search.z-list-search-scroll{
+	padding: 15px 0;
+	height: 66px;
+}
+
+/*广告*/
+.z-list-advertisement{
+	padding-left: 40px;
+}
+.z-list-advertisement .z-p-wrap{
+	margin-bottom: 50px;
+	width:200px;
+	overflow: hidden;
+}
+.z-list-advertisement .z-p-wrap p{
+	font-size:18px;
+	color:#333;
+	font-weight: 900;
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+.z-list-advertisement .z-p-wrap p a{
+	font-size:13px;
+	color:#999999;
+	line-height: 1;
+	padding-top: 13px;
+	font-weight: 400;
+}
+.z-list-advertisement .z-p-wrap p a:after,.z-best-box-title a:after{
+	content: '';
+	display: inline-block;
+	width:5px;
+	height: 9px;
+	background: url(../public/img/icons/arrow-icon.png) no-repeat center;
+	margin-left: 4px;
+}
+.z-list-advertisement .z-p-wrap li,.z-list-advertisement .z-p-wrap img{
+	cursor: pointer;
+}
+.z-list-advertisement .z-p-wrap li .z-p-list-img{
+	width:100%;
+	height: 150px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	position: relative;
+}
+.z-list-advertisement .z-p-wrap li{
+	margin-bottom: 38px;
+}
+.z-list-advertisement .z-p-wrap li .z-p-list-img img{
+	min-height: 100%;
+	min-width: 100%;
+}
+.z-list-advertisement .z-p-wrap li.z-a-type-1 .z-p-list-img .z-p-list-img-info{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 127px 0 0 12px;
+	color:#fff;
+	font-size:12px;
+	background: linear-gradient(transparent 70%,#000);
+	background: -webkit-linear-gradient(transparent 70%,#000);
+	background: -o-linear-gradient(transparent 70%,#000);
+	background: -moz-linear-gradient(transparent 70%,#000);
+}
+.z-list-advertisement .z-p-wrap li.z-a-type-1 .z-p-list-img .z-p-list-img-icon{
+	position: absolute;
+	background: rgba(34,40,23,0.8);
+	color:#fff;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 10px;
+	font-size:12px;
+	top:0;
+	right: 0;
+	border-bottom-left-radius: 10px;
+}
+.z-list-advertisement .z-p-wrap li.z-a-type-1 .z-p-list-title{
+	width:100%;
+	color:#111;
+	margin-bottom: 3px;
+	font-size:14px;
+}
+.z-list-advertisement .z-p-wrap li .z-p-list-price{
+	line-height: 20px;
+	font-size:12px;
+	color:#999999;
+}
+.z-list-advertisement .z-p-wrap li .z-p-list-price>span.z-fr{
+	color:#ff5400;
+	font-size:16px;
+	font-weight: 900;
+}
+.z-list-advertisement .z-p-wrap li.z-a-type-2 .z-p-list-title{
+	font-size:16px;
+	color:#333;
+	font-weight: 900;
+	margin-bottom: 3px;
+}
+.z-list-advertisement .z-p-wrap li.z-a-type-2 .z-p-list-img-icon-1{
+	height: 24px;
+	padding: 0 14px;
+	background: #e1a930;
+	color:#fff;
+	line-height: 24px;
+	font-size:12px;
+	position: absolute;
+	top:0;
+	right: 0;
+	border-bottom-left-radius: 8px;
+}
+/*品牌推荐*/
+.z-best-box-title{
+	margin-bottom: 20px;
+	color:#333;
+	font-size:24px;
+}
+.z-best-box-title a{
+	float:right;
+	color:#999999;
+	font-size:13px;
+	padding-top: 12px;
+}
+.z-best-house{
+	padding-left: 0;
+}
+.z-best-house .z-p-wrap{
+	margin-bottom: 0;
+	width:100%;
+}
+.z-best-house .z-p-wrap .z-p-list  li{
+	float: left;
+	width:200px;
+	margin-right: 50px;
+}
+.z-best-house .z-p-wrap .z-p-list  li:nth-child(5n){
+	margin-right: 0px;
+}
